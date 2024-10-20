@@ -21,6 +21,7 @@
     - get all tasks in the system
     - search and filter by any task criteria (id / title / description / due date / user_id)
 - send periodic remainder email for user before 24h on her task duedate using SMTP gmail
+- Pagination approach in search and filter end points
 
 ---
 
