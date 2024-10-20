@@ -25,7 +25,7 @@
 
 ---
 
-## 📍 Data Base Entitites
+## 📍 Dataلاase Entitites
 ![image](https://github.com/user-attachments/assets/76fbc284-e8d1-48f9-99f9-8612d8915b9a)
 </br>
 - Task
@@ -51,7 +51,7 @@
 
 ---
 
-## 📍 End points APIs
+## 📍 End Points APIs
 ![image](https://github.com/user-attachments/assets/617c1890-b8a0-4480-8be0-5dea70e16b26)
 
 ---
