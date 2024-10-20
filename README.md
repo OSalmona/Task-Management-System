@@ -28,10 +28,6 @@
 ## 📍 Dataلاase Entitites
 ![image](https://github.com/user-attachments/assets/76fbc284-e8d1-48f9-99f9-8612d8915b9a)
 </br>
-- Task
-- Task_Status
-- Task_Priority
-- User
 ``` mysql
 DROP TABLE task;
 DROP TABLE task_status;
