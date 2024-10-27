@@ -20,9 +20,9 @@
 ## 📍 How to Run application
 - application run on server port 8080 so it will be http://localhost:8080
 - data base created automaticaaly when project run 
-      - http://localhost:8080/h2-console
-      - username : sa
-      - password :
+      - http://localhost:8080/h2-console </br>
+      - username : sa </br>
+      - password : </br>
   
 ## 📍 Project Properties
 - Database : H2 database
