@@ -12,12 +12,20 @@
 - Spring boot version 3.3.4
 - Java version 17
 - Apache Maven 3.9.6
+- Docker Engine
   
 ## 📍 How to install 
 - downlod project from this repo
 - or git clone https://github.com/OSalmona/Task-Management-System.git
 
-## 📍 How to Run application
+## 📍 How to Run application by Docker
+- We should have a docker engine installed in our machine
+- run command : docker build -t tms_image .
+- run command : docker run -p 8080:8080 tms_image
+- Now We Can access Our end points through postman 
+- data base created automaticaaly when project run 
+
+## 📍 How to Run application in our macine
 - application run on server port 8080 so it will be http://localhost:8080
 - data base created automaticaaly when project run 
       - http://localhost:8080/h2-console </br>
@@ -58,9 +66,6 @@
 - test paginationAndSort end point for regular user
 - by /api/v1/tasks/paginationAndSort/0/5/status_id end point
 ![image](https://github.com/user-attachments/assets/0ba98f97-4341-4180-9037-c485aee92717)
-
-
-
 
 ---
 
@@ -125,14 +130,12 @@ alter table if exists task
 add constraint user_FK foreign key (user_id) references _user ;
 ```
 
-
-
+---
 
 ## 📍 End Points APIs
 ![image](https://github.com/user-attachments/assets/617c1890-b8a0-4480-8be0-5dea70e16b26)
 
 ---
-
 
 ## 🔗 Quick Links 
 - h2 databae : http://localhost:8080/h2-console
