@@ -8,6 +8,62 @@
 
 ---
 
+## 📍 Project Requirments
+- Spring boot version 3.3.4
+- Java version 17
+- Apache Maven 3.9.6
+  
+## 📍 How to install 
+- downlod project from this repo
+- or git clone https://github.com/OSalmona/Task-Management-System.git
+
+## 📍 How to Run application
+- application run on server port 8080 so it will be http://localhost:8080
+- data base created automaticaaly when project run 
+      - http://localhost:8080/h2-console
+      - username : sa
+      - password :
+  
+## 📍 Project Properties
+- Database : H2 database
+- Server Port : 8080
+- spring.h2.console.path=/h2-console
+- spring.datasource.url=jdbc:h2:mem:banquemisrDB
+- spring.datasource.password=
+- deafult users :
+  </br>
+  1- email: 1@admin.com -> password : 12345
+  </br>
+  2- email: 1@user.com  ->  password : 12345
+  </br>
+  3- email: 2@user.com  -> password : 12345
+  </br>
+
+---
+
+## 📍 example :: How to Test application by admin 
+- we can do that by postman
+- Register New admin account
+  ![image](https://github.com/user-attachments/assets/350b36bf-04db-4e5a-b9a2-9a54cba9937c)
+- test paginationAndSort end point for admin
+ by /api/v1/tasks/paginationAndSort/0/5/status_id end point
+- ![image](https://github.com/user-attachments/assets/da4806ba-bc72-417c-a1d4-865f57858bd9)
+
+## 📍 example :: How to Test application by regular user 
+- we can do that by postman
+- login with one of predefined user in database [email: 1@user.com  ->  password : 12345]
+  by /api/v1/auth/authenticate end point 
+  ![image](https://github.com/user-attachments/assets/7d527929-b885-4766-93ca-48501b9744b9)
+
+- test paginationAndSort end point for regular user
+- by /api/v1/tasks/paginationAndSort/0/5/status_id end point
+![image](https://github.com/user-attachments/assets/0ba98f97-4341-4180-9037-c485aee92717)
+
+
+
+
+---
+
 ## 📍 Project Features
 - Register / login (authentication using jwt)
 - regular user have permission
@@ -25,7 +81,7 @@
 
 ---
 
-## 📍 Dataلاase Entitites
+## 📍 Database Entitites
 ![image](https://github.com/user-attachments/assets/76fbc284-e8d1-48f9-99f9-8612d8915b9a)
 </br>
 ``` mysql
@@ -70,22 +126,7 @@ add constraint user_FK foreign key (user_id) references _user ;
 ```
 
 
-## 📍 Project Properties
-- Database : H2 database
-- Server Port : 8080
-- spring.h2.console.path=/h2-console
-- spring.datasource.url=jdbc:h2:mem:banquemisrDB
-- spring.datasource.password=
-- deafult users :
-  </br>
-  1- email: 1@admin.com -> password : 12345
-  </br>
-  2- email: 1@user.com  ->  password : 12345
-  </br>
-  3- email: 2@user.com  -> password : 12345
-  </br>
 
----
 
 ## 📍 End Points APIs
 ![image](https://github.com/user-attachments/assets/617c1890-b8a0-4480-8be0-5dea70e16b26)
